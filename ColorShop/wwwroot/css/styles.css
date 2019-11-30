@@ -1,0 +1,59 @@
+﻿/*
+
+body {
+    font-family: sans-serif;
+}
+
+input[type=submit] {
+    width: auto;
+}
+input , textarea {
+    font-size: 18px;
+    width: 200px;
+}
+
+
+label{
+    font-size: 16px;
+}
+
+#contactForm{
+    background-color: lightgray;
+}
+
+#loginToggle {
+    cursor: pointer;
+}
+
+.popup-form{
+    padding: 5px;
+    border: 2px black inset;
+    display: inline-block;
+    
+}
+.popup-form input{
+    width: 200px;
+}
+
+.popup-form label{
+    width: 150px;
+    display: inline-block;
+}
+
+.popup-form input[type=submit], .popup-form input[type=checkbox]
+{
+    width: auto;
+}
+
+menu>ul>li{
+    display:inline;
+}
+
+menu li::after{
+    content: ' |';
+}
+
+menu li:last-of-type::after{
+content: "";
+}
+    */

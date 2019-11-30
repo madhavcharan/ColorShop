@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "ColorConnectionString": "server=(localdb)\\ProjectsV13;Database=ColorShopDb;Integrated Security=true;MultipleActiveResultSets=true;"
+  }
+}
