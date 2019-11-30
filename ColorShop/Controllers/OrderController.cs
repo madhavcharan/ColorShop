@@ -33,6 +33,10 @@ namespace ColorShop.Controllers
             }
         }
 
+        /*
+         * Get Order that corresponds to an Id and return the viewmodel for the order
+         */
+
         [HttpGet("{id:int}")]
         public IActionResult Get(int id)
         {
@@ -51,6 +55,11 @@ namespace ColorShop.Controllers
             }
 
         }
+
+
+        /*
+         * Creates a new order if the viewmodel is valid and redirects to the viewmodel that corresponds to the newly created order
+         */
 
         [HttpPost]
         public IActionResult Post([FromBody]OrderViewModel model)

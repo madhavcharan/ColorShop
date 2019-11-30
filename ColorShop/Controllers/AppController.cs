@@ -36,7 +36,7 @@ namespace ColorShop.Controllers
         {
             if (ModelState.IsValid)
             {
-                _mailService.SendMessage("charan.madhav@gmail.com", model.Subject, $"From: { model.Name}, {model.Email}, Message: {model.Message}");
+                _mailService.SendMessage("charan.madhav@colorshop.com", model.Subject, $"From: { model.Name}, {model.Email}, Message: {model.Message}");
                 ViewBag.UserMessage = "Message Sent!";
                 ModelState.Clear();
             }

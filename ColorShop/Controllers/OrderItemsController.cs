@@ -36,6 +36,9 @@ namespace ColorShop.Controllers
 
         }
 
+        /*
+         * Returns the OrderItem that corresponds to the orderId and OrderItemid that was specified in the URL
+         */
         [HttpGet("{id}")]
 
         public IActionResult Get(int orderId, int id)

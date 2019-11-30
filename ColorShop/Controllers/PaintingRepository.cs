@@ -12,9 +12,6 @@ namespace ColorShop.Controllers
     {
         private readonly ColorShopContext context;
 
-        public PaintingRepository()
-        {
-        }
 
         public PaintingRepository(ColorShopContext context)
         {
@@ -26,6 +23,9 @@ namespace ColorShop.Controllers
             context.Add(model);
         }
 
+        /*
+         * Get All Orders including the OrderItems and the product that the OrderItem they correspond to.
+         */
         public IEnumerable<Order> GetAllOrders()
         {
             return context.Orders
@@ -34,11 +34,17 @@ namespace ColorShop.Controllers
                 .ToList(); ;
         }
 
+        /*
+         * Get all products in the shop ordered by the title
+         */
         public IEnumerable<Product> GetAllProducts()
         {
             return context.Products.OrderBy(p => p.Title).ToList();
         }
 
+        /*
+         * Get Order by Id including the OrderItems and the product that the OrderItem they correspond to.
+         */
         public Order GetOrderById(int id)
         {
             return context.Orders
@@ -48,6 +54,9 @@ namespace ColorShop.Controllers
                 .FirstOrDefault();
         }
 
+        /*
+         * Get all products for a given category
+         */
         public IEnumerable<Product> GetProductsByCategory(string category)
         {
             return context.Products.Where(p => p.Category == category).ToList();
