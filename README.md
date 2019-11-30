@@ -1,1 +1,1 @@
-# ColorShop
+# ColorShop is a Online market place to buy Artworks. It makes use of MVC architecture. ASP.NET Core and entity framework has been used to build the api for placing orders, creating products. User authentication and Authorization is handled via Microsoft's Identity Module. Client-side development has been done using Angular, HTML, Bootstrap, Jquery and Javascript.
